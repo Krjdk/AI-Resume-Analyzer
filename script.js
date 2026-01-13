@@ -44,7 +44,7 @@ async function extractText(file) {
 }
 
 async function analyzeResumeWithAI(resumeText) {
-  const apiKey = "YOUR_API_KEY_HERE"; // <---- Replace with your OpenAI / Claude / Gemini API key
+  const apiKey = "AIzaSyC5EpLrK2zn4Q2lxT1cQmxA38gliYSqQqw"; 
   const apiUrl = "https://api.openai.com/v1/chat/completions";
 
   const prompt = `
