@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Resume Analyzer | Boost Your Resume. Beat the ATS.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>AI Resume Analyzer</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#analyzer">Analyzer</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" id="modeToggle" role="button">🌗 Toggle Mode</a></li>
+    </ul>
+  </nav>
+
+  <main id="home" class="container hero">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Boost Your Resume. Beat the ATS.</h2>
+          <h3>Get AI-powered insights to stand out in job applications.</h3>
+        </hgroup>
+        <p>Upload your resume and get a complete ATS analysis including score, skill gaps, and improvement suggestions. Enhance your chances of landing your dream job with actionable feedback powered by AI.</p>
+        <figure>
+          <img src="YOUR_DALLE_HERO_IMAGE_URL_HERE" alt="AI analyzing a digital resume" />
+          <figcaption>AI-driven Resume Analysis Dashboard</figcaption>
+        </figure>
+      </section>
+    </div>
+  </main>
+
+  <section id="analyzer" class="container analyzer">
+    <article>
+      <hgroup>
+        <h2>Upload Your Resume</h2>
+        <h3>AI-Powered Resume Analysis</h3>
+      </hgroup>
+
+      <div id="uploadArea" class="upload-box">
+        <input type="file" id="resumeInput" accept=".pdf,.docx" hidden>
+        <p>Drag & Drop your resume here or <a href="#" id="uploadLink">click to upload</a></p>
+      </div>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Analyzing your resume... Please wait.</p>
+      </div>
+
+      <div id="results" class="hidden">
+        <h3>Analysis Results</h3>
+        <div class="score-section">
+          <h4>ATS Score: <span id="atsScore">--</span>/100</h4>
+          <div class="progress"><div id="atsBar" class="progress-bar"></div></div>
+        </div>
+
+        <div class="results-grid">
+          <div>
+            <h4>Strengths</h4>
+            <ul id="strengthsList"></ul>
+          </div>
+          <div>
+            <h4>Weaknesses</h4>
+            <ul id="weaknessesList"></ul>
+          </div>
+          <div>
+            <h4>Missing Skills</h4>
+            <ul id="missingSkillsList"></ul>
+          </div>
+          <div>
+            <h4>AI Suggestions</h4>
+            <ul id="suggestionsList"></ul>
+          </div>
+        </div>
+        <button id="downloadReport">Download Feedback Report</button>
+      </div>
+    </article>
+  </section>
+
+  <section id="about" class="container about">
+    <article>
+      <hgroup>
+        <h2>About AI Resume Analyzer</h2>
+        <h3>Revolutionizing Resume Optimization</h3>
+      </hgroup>
+      <p>We help job seekers unlock their potential by analyzing resumes through advanced AI models. Our tool compares your resume to top job roles, highlighting gaps, strengths, and opportunities for improvement.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="container contact">
+    <article>
+      <hgroup>
+        <h2>Contact Us</h2>
+        <h3>Have a question or suggestion?</h3>
+      </hgroup>
+      <form class="grid">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" onclick="event.preventDefault()">Send Message</button>
+      </form>
+    </article>
+  </section>
+
+  <footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a></small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
